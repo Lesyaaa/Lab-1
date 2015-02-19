@@ -1,42 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lab-1 by Lesyaaa</title>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Lab-1</h1>
-        <p>Моя лабораторная </p>
+<body>
+<em><h2>Семенова Алеся,Вариант 13</h2></em>
+</body>
 
-        <p class="view"><a href="https://github.com/Lesyaaa/Lab-1">View the Project on GitHub <small>Lesyaaa/Lab-1</small></a></p>
+  <canvas id="smile" width="600" height="500">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+   // Рисуем окружность 
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "#698B22";
+     cxt.lineWidth = 1;
+     cxt.arc(50,75,25,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (2,1);
+     cxt.strokeStyle = "#FF1493";
+     cxt.lineWidth = 4;
+     cxt.arc(75,152,50,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#FF1493";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "Lime";
+     cxt.lineWidth = 1;
+     cxt.arc(57,210,8,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+     cxt.beginPath();
+     cxt.scale (3,1);
+     cxt.strokeStyle = "Lime";
+     cxt.lineWidth = 1;
+     cxt.arc(40,210,8,0,Math.PI*2,true);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = "#698B22";
+     cxt.fill();
+     cxt.stroke ();
+          // Рисуем левый глаз 
+     cxt.fillStyle = "#FFD700";
+     cxt.beginPath();
+     cxt.arc(110,40,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем правый глаз 
+     cxt.fillStyle="#FFD700";
+     cxt.beginPath();
+     cxt.arc(180,40,20,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
 
 
-        <ul>
-          <li><a href="https://github.com/Lesyaaa/Lab-1/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Lesyaaa/Lab-1/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Lesyaaa/Lab-1">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Lesyaaa">Lesyaaa</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
     
-  </body>
+ 
+
+  </script>
+ </head>
+ <body>
 </html>
